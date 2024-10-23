@@ -42,6 +42,11 @@ jobs:
     permissions:
       id-token: write #This is required for requesting the JWT
 
+- name: run npm start
+        run: |
+          npm install
+          npm i
+          npm start
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
